@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Personal Portfolio (Fixed)</title>
+    <!-- Boxicons for icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- Inline CSS with fixes and responsiveness -->
+   <link rel="stylesheet" href="css/style.css">
+   
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header"> 
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Yosef Agimassie</h1>
+            <h3>And I'm a <span class="multiple-text">Fullstack Web Developer</span></h3>
+            <p>I specialize in creating dynamic and user-friendly web applications, leveraging modern front-end frameworks and robust backend services.</p>
+
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <!-- Using a placeholder image since local files (imag/...) won't load -->
+            <img src="imag/logo-1.jpg" alt="Profile Picture Placeholder">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <!-- Using a placeholder image since local files (imag/...) won't load -->
+            <img src="imag/logo-1.jpg" alt="About Me Placeholder">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span >Me</span></h2>
+            <h3>Fullstack Developer</h3>
+            <p>
+                I am a Full Stack Web Developer passionate about building dynamic, user-friendly 
+                and responsive web applications. I have hands-on experience with both frontend (React, JavaScript, HTML, CSS) and backend technologies (Node.js, Express, MySQL), 
+                allowing me to create complete, scalable solutions from concept to deployment. I thrive on solving complex problems and delivering high-quality code.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span >Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>
+                    From high-level system architecture to pixel-perfect UI/UX design, I handle the full development lifecycle for robust web applications.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxl-react'></i> <!-- Updated icon for frontend -->
+                <h3>Front-end Development</h3>
+                <p>Specializing in modern frameworks like React to build fast, interactive, and mobile-first user interfaces using the latest standards.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-server'></i> <!-- Updated icon for backend -->
+                <h3>Back-end Development</h3>
+                <p>Developing robust server-side logic and scalable APIs using Node.js, Express, and managing databases like MySQL and MongoDB.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span >Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="imag/pro1.jpg" alt="Project Placeholder 1">
+                <div class="portfolio-layer">
+                    <h4>E-commerce Platform</h4>
+                    <p>Built a responsive e-commerce site with full CRUD functionality for products and user authentication.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="imag/pro1.jpg" alt="Project Placeholder 2">
+                <div class="portfolio-layer">
+                    <h4>Real-time Chat App</h4>
+                    <p>A real-time communication application using WebSockets for instant messaging and user presence status.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="imag/pro3.jpg" alt="Project Placeholder 3">
+                <div class="portfolio-layer">
+                    <h4>Data Dashboard</h4>
+                    <p>Interactive dashboard for visualizing complex data sets using custom charts and dynamic filters.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact"> 
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject" required>
+            </div>
+
+            <textarea rows="10" placeholder="Your Message" required></textarea>
+
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle and Active Link Highlighting -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
